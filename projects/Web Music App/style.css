@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Golos Text";
+}
+
+body{
+  background-color: #DBA39A;
+}
+
+.Main{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#header{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 30px;
+  align-items: center;
+}
+
+#middle{
+  display: flex;
+  flex-direction: column;
+  width: 81vw;
+}
+
+.fa-solid{
+  width: 24px;
+  height: 26px;
+}
+
+.fa-regular{
+  font-size: 1.5em;
+  padding: 5px;
+  background-color: #EDDBC7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.fa-regular:hover{
+  color: #F9F5E7;
+  background-color: #A7727D;
+}
+
+.fa-user{
+  font-size: 1.5em;
+  background-color: #EDDBC7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.fa-user:hover{
+  color:#F9F5E7;
+  background-color: #A7727D;
+}
+
+#search{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+#search form input{
+  background-color: #F9F5E7;
+  color: black;
+  height: 35px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#navbar{
+  background-color: #F0DBDB;
+  width: 15vw;
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  box-shadow: 7px 0px 8px -1px rgb(0 0 0 / 75%);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#logo{
+  padding: 1em;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#pic{
+  height: 50px;
+  width: auto;
+}
+
+#txt{
+  display: flex;
+  flex-direction: column;
+}
+
+#txt p{
+  font-size: 10px;
+}
+
+#navbar ul{
+  list-style-type: none;
+  margin: 20%;
+  padding: 0;
+  margin: 0 0 10% 0;
+}
+
+#navbar li{
+  padding: 10px 50px 10px 10px;
+  text-align: left;
+  transition: background-color .2s ease-in;
+  border-radius: 13px;
+}
+
+#navbar i{
+  padding: 5px;
+}
+
+#navbar li:hover{
+  background-color: #F8EAD8;
+  border-radius: 13px;
+  border-left: 2px solid #FAD6A5;
+}
+
+#navbar li a{
+  text-decoration: none;
+}
+
+#info{
+  padding: 15%;
+  margin: 10%;
+  border-top: 1px solid black;
+  box-sizing: border-box;
+}
+
+.player{
+  background-color: #F5EBE0;
+  border-radius: 20px;
+  width: 100%;
+  height: 65%;
+  margin: 30px;
+  box-sizing: border-box;
+  border: 1px solid black;  
+}
+
+::placeholder{
+  color: black;
+  opacity: 1;
+}
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer1 {
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard1{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard1 > img{
+  height: 100%; 
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard1:hover{
+  transform: rotateY(180deg);
+}
+
+.maincontainer2 {
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 60%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard2{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard2 > img{
+  height: 100%; 
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard2:hover{
+  transform: rotateY(180deg);
+}
+
+.maincontainer3 {
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 60%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard3 > img{
+  height: 100%; 
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard3:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  background: #FEFCF3;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p, .theback p{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}

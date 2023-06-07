@@ -1,0 +1,220 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background: #F9F5E7;  
+}
+
+.header{
+  position: absolute;
+  width: 100vw; 
+  height: 100px;
+  border-bottom: solid 1px rgba(16, 16 ,16, 0.1);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #A7727D;
+}
+
+.header .header_container{
+  margin-top: 15px;
+}
+
+.header .inner{
+  width: 100vw;  
+  height: 100%;
+  display: block;
+  margin: 0%;
+  color: white;
+  text-align: center;
+}
+
+.header h4 {
+  position: relative;
+  top: 10px;
+}
+
+.footer .container{
+  max-width: 1170px;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+.footer .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100px;
+  padding: 5px 0;
+  border-top: solid 1px rgba(16, 16 ,16, 0.1);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #F8EAD8;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col p{
+  position: relative;
+  font-size: small;
+  top: 20%;
+}
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer1 {
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard1{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard1 > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard1:hover{
+  transform: rotateY(180deg);
+}
+
+.maincontainer2 {
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard2{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard2 > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard2:hover{
+  transform: rotateY(180deg);
+}
+
+.maincontainer3 {
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard3{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard3 > img{
+  height: 100%; 
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard3:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  background: #EDDBC7;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p, .theback p{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+

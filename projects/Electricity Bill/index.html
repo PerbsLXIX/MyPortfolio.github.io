@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+	<link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./s-logo.png" type="image/x-icon">
+  <title>Electric Consumption Calculator</title>
+</head>
+
+<body>
+  <h1>ELECTROBUZZ READING</h1>
+  <form id="electricForm" action="process.php" method="post">
+    <label for="previousReading">Previous Reading (kWh):</label>
+    <input type="number" id="previousReading" name="previousReading" required>
+    
+    <label for="currentReading">Current Reading (kWh):</label>
+    <input type="number" id="currentReading" name="currentReading" required>
+    
+    <label for="unit">Unit (kWh):</label>
+    <input type="number" id="unit" name="unit" required>
+    
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="result"></div>
+  
+  <script src="./calculator.js"></script>
+</body>
+</html>
